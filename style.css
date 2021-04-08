@@ -1,0 +1,345 @@
+@import "./phone_style.css" screen and (max-width: 524px);
+@import "./tablet_style.css" screen and (min-width: 525px) and (max-width:799px);
+@import "./monitor_style.css" screen and (min-width: 800px);
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+
+
+
+nav ul li a:hover{
+    color: red;
+}
+       
+.content {
+    background-color: #DFF9EB;
+    border: #ccc 1px solid;
+    padding: 10px;
+    grid-area: main-content;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+}
+
+#animals {
+    display: grid; 
+    width: 100%;  
+    grid-gap: 1rem;
+    background-color: #d0E8F0;
+    color: black;
+    border: #ccc 1px solid;
+    padding: 1rem;     
+} 
+
+
+#box-1 {
+    grid-area: box-1;
+}
+
+#box-2 {
+    grid-area: box-2;
+}
+
+#box-3 {
+    grid-area: box-3;
+}
+
+#box-4 {
+    grid-area: box-4;
+}
+
+#box-5 {
+    grid-area: box-5;
+}
+#box-6 {
+    grid-area: box-6;
+}
+#box-7 {
+    grid-area: box-7;
+}
+
+/* .to-hide {
+    display: none;
+} */
+
+footer {
+    text-align: center;
+    border: #ccc 1px solid;
+    background-color: #33BAEB;
+    color: black;
+    padding: 10px;
+    grid-area: footer;  
+}
+
+#box-1, #box-2, #box-3, #box-4, #box-5, #box-6, #box-7{
+    border: #ccc 1px solid;
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+/* styling for the suggestion form */
+
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} 
+
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+    border: 3px solid  #33BAEB;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+input[type=submit], input[type=reset] {
+    background-color: #33BAEB;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+#fieldset1 {
+    border: none;
+    padding: 20px;
+}
+
+#contact-form {
+    width: 100%;  
+    background-color: #d0E8F0;
+    color: black;
+    border: #ccc 1px solid;
+    padding: 1rem;   
+}
+
+
+/* styling specific to main page  */
+
+
+#Bears {
+    grid-area: bears;
+    display: block;
+    width: 100%
+}
+
+#BrownBear {
+    grid-area: brownBear;
+}
+
+#PolarBear {
+    grid-area: polarBear;
+}
+
+#GiantPanda {
+    grid-area: giantPanda;
+}
+
+/*  images on main page */
+.container-index{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'header       header     header'
+        'nav          nav        nav'
+        'main-content main-content main-content'
+        'animals-index     animals-index      animals-index'
+        'footer       footer       footer';
+} 
+
+
+#flamingo-img, #brownBear-img, #polarBear-img, #giantPanda-img {
+    display:block;
+    width: 100%;
+}
+
+#anteater-img, #vulture-img  {
+    display: block;
+    width: 100%;
+}
+
+#bison-img {
+    width: 80%;
+    float: right;
+    padding: 10px;
+}
+
+
+/* Styling specific to Reptile house page */
+
+
+#TortoiseAndTurtle {
+    grid-area: tortvsturt;
+    display: block;
+    width: 100%
+}
+
+#AlligatorandCrocodile{
+    grid-area: allivscroc;
+    display: block;
+    width: 100%
+}
+
+
+#Turtle {
+    grid-area: turtle;
+}
+
+#Tortoise {
+    grid-area: tortoise;
+}
+#Alligator{
+    grid-area: alligator;
+}
+
+#Crocodile{
+    grid-area: crocodile;
+}
+
+/*  images on Reptile House page  */
+#tortoise-img, #turtle-img, #alligator-img, #crocodile-img, #cobra-img, #python-img   {
+    display: block;
+    width: 100%;
+}
+
+#dragon-img {
+    width: 70%;
+    float: right;
+    padding: 10px;
+}
+
+
+
+/* Styling specific to Africa! page  */
+
+.container-africa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'header       header     header'
+        'nav          nav        nav'
+        'main-content main-content main-content'
+        'animals-africa     animals-africa      animals-africa'
+        'footer       footer       footer';
+}
+
+
+#hippo-img, #elephant-img, #ostrich-img, #impala-img, #giraffe-img {
+    display: grid;
+    width: 100%
+}
+
+#zebra-img{
+    width: 70%;
+    float: right;
+    padding: 10px;
+}
+
+
+/* Styling specific to Big Cats page */
+.container-cats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'header       header  header'
+        'nav          nav  nav'
+        'main-content main-content main-content'
+        'animals-cats     animals-cats  animals-cats'
+        'footer       footer  footer';
+}
+
+
+
+
+#Lions {
+    display: block;
+    grid-area: lions;
+}
+
+#MaleLion {
+    grid-area: maleLion;
+}
+
+#FemaleLion { 
+    grid-area: femaleLion;
+}
+
+/*  images on Big Cats page  */
+
+#tiger-img, #femaleLion-img, #maleLion-img, #cheeta-img, #cougar-img, #leopard-img  {
+    display: grid;
+    width: 100%;
+}
+
+
+    
+/* Styling specific to the Seven Seas page  */
+
+.container-seas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'header       header     header'
+        'nav          nav        nav'
+        'main-content main-content main-content'
+        'animals-seas     animals-seas      animals-seas'
+        'footer       footer       footer';
+}
+
+
+
+#dolphin-img, #sealion-img, #jellyfish-img, #penguin-img, #seahorse-img, #octopus-img {
+    display: grid;
+    width: 100%
+}
+
+#shark-img {
+    display: block;
+    border: none;
+    width: 100%; 
+}
+
+/* Styling specific to the Primate House page  */
+
+.container-primates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        'header       header     header'
+        'nav          nav        nav'
+        'main-content main-content main-content'
+        'animals-primates     animals-primates      animals-primates'
+        'footer       footer       footer';
+}
+
+
+
+#monkey-img, #gorilla-img, #orangutan-img, #gibbon-img {
+    display: grid;
+    width: 100%
+}
+

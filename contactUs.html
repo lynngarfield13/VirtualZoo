@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Virtual Zoo - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container-form">
+        <header class="header">
+            <h1 id="header-desc"><img id="logo" src="./img/tiger-graphic.png" alt="Tiger Graphic" height="100">My Virtual Zoo </h1>
+         </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reptileHouse.html">Reptile House</a></li>
+                <li><a href="africa.html">Africa!</a></li>
+                <li><a href="bigCats.html">Big Cats</a></li>
+                <li><a href="sevenSeas.html">Seven Seas</a></li>
+                <li><a href="primateHouse.html">Primate House</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <section class="content">
+            <h2>Contact Us</h2>
+            <br>
+            <p>If you'd to contact us, please use the form below.  We encourage suggestions for new animals to add to our zoo.   </p>
+            
+        </section>
+       
+        <div id="contact-form">
+            <form  action="javascript:thankYouAlert()" method="POST">
+                <fieldset id="fieldset1">
+                 
+                    <div>
+                        <label for="first-name">Enter Your First Name:</label> <br>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <br>
+                        <br>
+                        <label for="last-name">Enter Your Last Name:</label> <br>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email1">Enter Your Email Address:</label><br>
+                        <input type="email" id="email1" name="email1" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="message1">Please enter your comments below.</label><br>
+                        <textarea name="imessage" id="message1" cols="50" rows="5"></textarea>
+                    </div>
+
+                    <br><br>
+                    <input id="submit-button" type="submit" value="Submit">
+                    <input id="reset-button" type="reset">
+                </fieldset>
+            </form>
+            <script src="./myScript.js"></script>
+        </div>
+        <footer>
+            <p>Page By: Lynn Garfield </p>
+            <p>Last Updated: 06May2020</p>
+        </footer>
+    </div>
+   
+
+</body>
+</html>
